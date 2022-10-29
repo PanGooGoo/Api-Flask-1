@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Model</title>
+    <style>
+        body {
+            background-color: lightyellow;
+        }
+    </style>
+</head>
+
+
+<body>
+    <h1 style="text-align:center; font-family: Lato; background-color: palevioletred">Panicky's Predictions</h1>
+    <div style="padding:20px;">
+        <form method="post" enctype="multipart/form-data">
+            <div style="padding:10px; text-align:center">
+                name: <input type="string" list="sOptions" name="name" />
+                <datalist id="sOptions">
+                    <option value="Sarah">Sarah</option>
+                </datalist>
+                <br>
+            </div>
+            <div style="padding:10px; text-align:center">
+                day: <input type="string" list="dayOptions" name="day" />
+                <datalist id="dayOptions">
+                    <option value="Monday">Monday</option>
+                    <option value="Tues">Tues</option>
+                    <option value="Wed">Wed</option>
+                    <option value="Thur">Thur</option>
+                    <option value="Fri">Fri</option>
+                    <option value="Sat">Sat</option>
+                    <option value="Sun">Sun</option>
+                </datalist>
+                <br>
+            </div>
+            <div style="padding:10px; text-align:center">
+                mood: <input type="string" list="moodOptions" name="mood">
+                <datalist id="moodOptions">
+                    <option value="Pissed">Pissed</option>
+                    <option value="Not Pissed">Not Pissed</option>
+                </datalist>
+                <br>
+            </div>
+            <div style="padding:10px; text-align:center">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+        <div style="padding:10px; text-align:center">
+            Outcome: {{pred}}
+        </div>
+    </div>
+
+</body>
+
+</html>
